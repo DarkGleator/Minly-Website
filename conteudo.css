@@ -1,0 +1,118 @@
+body {
+    background-size: cover; /* Para garantir que a imagem cubra todo o corpo */
+    background-repeat: no-repeat; /* Para evitar a repetição da imagem */
+    font-family: 'Como', sans-serif; /* Definindo a fonte */
+    margin: 0;
+    min-height: 100vh; /* Garante que o corpo tenha pelo menos a altura da janela de visualização */
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px; /* Adiciona um espaço interno ao conteúdo */
+    z-index: 1; /* Coloca o conteúdo à frente do gradiente */
+    position: relative;
+}
+
+/* Estilos para a navbar */
+.nav {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem; /* Definindo o tamanho da fonte da navbar */
+}
+
+.masthead-brand {
+    margin-right: auto; /* Margem à direita automática para empurrar o título para a esquerda */
+}
+
+.nav-link,
+.dropdown-toggle {
+    margin-left: 40px; /* Ajustando margem à esquerda */
+    margin-right: 5px;
+    text-decoration: none;
+    color: black; /* Definindo a cor do texto */
+    font-weight: bold; /* Deixando o texto em negrito */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Ajustando a posição para aparecer abaixo do link "projetos" */
+    left: 0; /* Alinhando com o lado esquerdo do link "projetos" */
+    background-color: #fff; /* Definindo uma cor de fundo */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adicionando uma sombra */
+    z-index: 1; /* Ajustando a ordem de empilhamento */
+    border-radius: 25px; /* Arredondando as bordas do menu dropdown */
+    font-weight: bold; /* Deixando o texto em negrito */
+}
+
+/* Estilizando os itens do menu dropdown */
+.dropdown-item {
+    padding: 12px 16px;
+    color: black; /* Definindo a cor do texto */
+    text-decoration: none; /* Removendo a decoração de texto */
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    border-radius: 25px; /* Arredondando as bordas quando focados */
+}
+
+.dropdown:focus .dropdown-menu {
+    display: block; /* Mostrar o menu dropdown quando o link "projetos" é clicado */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 20px; /* Espaçamento externo para fora do container */
+}
+
+.image-container {
+    width: 500px;
+    height: 660px;
+    margin: 70px; /* Espaçamento entre os containers */
+}
+.image-container img {
+    width: 100%; /* Ocupa 100% do contêiner */
+    height: 100%; /* Ocupa 100% do contêiner */
+}
+
+.text-container {
+    max-width: 400px; /* Define o limite máximo de largura */
+    padding-top: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.text-container h1 {
+    margin-top: 0; /* Remove a margem superior padrão do título */
+    margin-bottom: 50px; /* Adiciona margem na parte inferior do título */
+    font-size: 48px;
+}
+
+
+.green-button {
+    background-color: rgb(145, 182, 174);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px; /* Espaçamento superior do botão */
+    font-family: 'Archivo', sans-serif; /* Definindo a fonte */
+}
+
+.green-button:hover {
+    background-color: rgb(145, 182, 174);
+}
+
+#dynamic-instagram,
+#dynamic-email {
+    margin-bottom: -15px; /* Remove a margem inferior */
+}

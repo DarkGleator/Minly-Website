@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Minly</title>
+    <link rel="stylesheet" href="secundarias.css"> <!-- Arquivo CSS -->
+</head>
+
+<body>
+    <div class="gradient-overlay" id="som">
+        <div class="content">
+            <header class="masthead mb-auto">
+                <div class="inner">
+                    <nav class="nav"> <!-- NavBar -->
+                        <div class="masthead-brand">
+                            <a href="main.html#main"><img src="img/logo.png" alt="Logo da Minly" style="max-width: 100px; max-height: 100px; padding-top: 8px;"></a>
+                        </div>
+                        <a class="nav-link active" href="curso.html#cursos">curso</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">projetos</a>
+                            <div class="dropdown-menu" aria-labelledby="projetosDropdown">
+                                <a class="dropdown-item" href="Design.html#design">Design Gráfico</a>
+                                <a class="dropdown-item" href="programacao.html#programacao">Programação</a>
+                                <a class="dropdown-item" href="animacao.html#animacao">Animação</a>
+                                <a class="dropdown-item" href="fotografia.html#fotografia">Fotografia</a>
+                                <a class="dropdown-item" href="som.html#som">Som</a>
+                            </div>
+                        </div>
+                        <a class="nav-link" href="parceiros.html#parceiros">parceiros</a>
+                    </nav>
+                </div>
+            </header>
+            <h2>vídeo</h2>
+            <div class="container">
+                <div class="audio-container" onclick="redirectToDynamicVideoPage('Livros Risonhos', 'Teresa Pereira', 'img/video1.mp4')">
+                    <div class="audio-preview">
+                        <video controls>
+                            <source src="img/video1.mp4" type="video/mp4">
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+                    <div class="info">
+                        <p><a href="pagina_dinamica_video.html?project=Livros%20Risonhos&person=Teresa%20Pereira&video=img/video1.mp4">Livros Risonhos</a></p>
+                        <p>Teresa Pereira</p>
+                    </div>
+                </div>
+                <div class="audio-container" onclick="redirectToDynamicVideoPage('Ursos Selvagens', 'João Jesus', 'img/video2.mp4')">
+                    <div class="audio-preview">
+                        <video controls>
+                            <source src="img/video2.mp4" type="video/mp4">
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+                    <div class="info">
+                        <p><a href="pagina_dinamica_video.html?project=Ursos%20Selvagens&person=João%20Jesus&video=img/video2.mp4">Ursos Selvagens</a></p>
+                        <p>João Jesus</p>
+                    </div>
+                </div>
+                <div class="audio-container" onclick="redirectToDynamicVideoPage('Oceano Azul', 'Henrique Fonseca', 'img/video3.mp4')">
+                    <div class="audio-preview">
+                        <video controls>
+                            <source src="img/video3.mp4" type="video/mp4">
+                            Your browser does not support the video element.
+                        </video>
+                    </div>
+                    <div class="info">
+                        <p><a href="pagina_dinamica_video.html?project=Oceano%20Azul&person=Henrique%20Fonseca&video=img/video3.mp4">Oceano Azul</a></p>
+                        <p>Henrique Fonseca</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptvideo.js"></script> <!-- Arquivo JavaScript -->
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Minly</title>
+    <link rel="stylesheet" href="secundarias.css"> <!-- Arquivo CSS -->
+</head>
+
+<body>
+    <div class="gradient-overlay" id="animacao">
+    <div class="content">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <nav class="nav"> <!-- NavBar -->
+                    <div class="masthead-brand">
+                        <a href="main.html#main"><img src="img/logo.png" alt="Logo da Minly" style="max-width: 100px; max-height: 100px; padding-top: 8px;"></a>
+                    </div>
+                    <a class="nav-link active" href="curso.html#cursos">curso</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">projetos</a>
+                        <div class="dropdown-menu" aria-labelledby="projetosDropdown">
+                            <a class="dropdown-item" href="Design.html#design">Design Gráfico</a>
+                            <a class="dropdown-item" href="animacao.html#animacao">Animação</a>
+                            <a class="dropdown-item" href="fotografia.html#fotografia">Fotografia</a>
+                            <a class="dropdown-item" href="video.html#video">Vídeo</a>
+                            <a class="dropdown-item" href="som.html#som">Som</a>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="parceiros.html#parceiros">parceiros</a>
+                </nav>
+            </div>
+        </header>
+        <h2>programacão</h2>
+        <div class="container">
+            <div class="image-container" onclick="redirectToDynamicPage('Blue World', 'Alexandre Lourenço', 'img/pro1.png')">
+                <img src="img/pro1.png" alt="Imagem 1">
+                <div class="info">
+                    <p>Blue World</p>
+                    <p>Alexandre Lourenço</p>
+                </div>
+            </div> 
+            <div class="image-container" onclick="redirectToDynamicPage('GreenWolf', 'Sergio Afonso', 'img/pro2.jpg')">
+                <img src="img/pro2.jpg" alt="Imagem 2">
+                <div class="info">
+                    <p>GreenWolf</p>
+                    <p>Sergio Afonso</p>
+                </div>
+            </div> 
+            <div class="image-container" onclick="redirectToDynamicPage('Analytics', 'André Teixeira', 'img/pro3.jpg')">
+                <img src="img/pro3.jpg" alt="Imagem 3">
+                <div class="info">
+                    <p>Analytics</p>
+                    <p>André Teixeira</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script> <!-- Arquivo JavaScript -->
+</body>
+</html>

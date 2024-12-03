@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Minly</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS externo -->
+</head>
+
+<body>
+    <div class="gradient-overlay" id="main">
+        <div class="content">
+            <header class="masthead mb-auto">
+                <div class="inner">
+                    <nav class="nav"> <!-- NavBar-->
+                        <div class="masthead-brand">
+                            <img src="img/logo.png" alt="Logo da Minly" style="max-width: 100px; max-height: 100px; padding-top: 8px;">
+                        </div>
+                        <a class="nav-link active" href="curso.html#cursos">curso</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">projetos</a>
+                            <div class="dropdown-menu" aria-labelledby="projetosDropdown">
+                                <a class="dropdown-item" href="Design.html#design">Design Gráfico</a>
+                                <a class="dropdown-item" href="programacao.html#programacao">Programação</a>
+                                <a class="dropdown-item" href="animacao.html#animacao">Animação</a>
+                                <a class="dropdown-item" href="fotografia.html#fotografia">Fotografia</a>
+                                <a class="dropdown-item" href="video.html#video">Vídeo</a>
+                                <a class="dropdown-item" href="som.html#som">Som</a>
+                            </div>
+                        </div>
+                        <a class="nav-link" href="parceiros.html#parceiros">parceiros</a>
+                    </nav>
+                </div>
+            </header>
+            <main role="main" class="inner cover">
+                <h1 class="cover-heading">O que é a Minly?</h1>
+                <p class="lead">Em colaboração com a Escola Superior de Educação de Coimbra, a minly dedicou-se à criação de um portal exclusivo, proporcionando um espaço centralizado para a exposição dos trabalhos desenvolvidos pelos talentosos alunos do curso de Comunicação e Design Multimédia (CDM). O propósito fundamental deste portal é oferecer suporte tanto aos estudantes quanto aos profissionais, facilitando a procura por oportunidades no mercado de trabalho e servindo de fonte inspiradora para as gerações futuras.</p>
+                <p class="lead">
+                    <a href="#" class="footer" onclick="openVideoModal()">Ve o vídeo aqui</a>
+                </p>
+            </main>
+            <footer class="">
+                <div class="inner">
+                    <p>PROJETO REALIZADO EM COLABORAÇÃO COM A ESEC</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Modal do vídeo -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideoModal()">&times;</span>
+            <video width="100%" height="auto" controls>
+                <source src="img/minly.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Arquivo JavaScript -->
+</body>
+</html>

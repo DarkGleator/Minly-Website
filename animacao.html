@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Minly</title>
+    <link rel="stylesheet" href="secundarias.css"> <!-- Arquivo CSS -->
+</head>
+
+<body>
+    <div class="gradient-overlay" id="animacao">
+    <div class="content">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <nav class="nav"> <!-- NavBar -->
+                    <div class="masthead-brand">
+                        <a href="main.html#main"><img src="img/logo.png" alt="Logo da Minly" style="max-width: 100px; max-height: 100px; padding-top: 8px;"></a>
+                    </div>
+                    <a class="nav-link active" href="curso.html#cursos">curso</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">projetos</a>
+                        <div class="dropdown-menu" aria-labelledby="projetosDropdown">
+                            <a class="dropdown-item" href="Design.html#design">Design Gráfico</a>
+                            <a class="dropdown-item" href="programacao.html#programacao">Programação</a>
+                            <a class="dropdown-item" href="fotografia.html#fotografia">Fotografia</a>
+                            <a class="dropdown-item" href="video.html#video">Vídeo</a>
+                            <a class="dropdown-item" href="som.html#som">Som</a>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="parceiros.html#parceiros">parceiros</a>
+                </nav>
+            </div>
+        </header>
+        <h2>animação</h2>
+        <div class="container">
+            <div class="image-container" onclick="redirectToDynamicPage('Lego World', 'Armando Ferreira', 'img/anima1.jpg')">
+                <img src="img/anima1.jpg" alt="Imagem 1">
+                <div class="info">
+                    <p>Lego World</p>
+                    <p>Armando Ferreira</p>
+                </div>
+            </div> 
+            <div class="image-container" onclick="redirectToDynamicPage('Ice Cubes', 'Joana Pereira', 'img/anima2.png')">
+                <img src="img/anima2.png" alt="Imagem 2">
+                <div class="info">
+                    <p>Ice Cubes</p>
+                    <p>Joana Pereira</p>
+                </div>
+            </div> 
+            <div class="image-container" onclick="redirectToDynamicPage('O Fantasma', 'Leonardo Leiria', 'img/anima3.jpg')">
+                <img src="img/anima3.jpg" alt="Imagem 3">
+                <div class="info">
+                    <p>O Fantasma</p>
+                    <p>Leonardo Leiria</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script> <!-- Arquivo JavaScript -->
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Minly</title>
+    <link rel="stylesheet" href="secundarias.css"> <!-- Arquivo CSS -->
+</head>
+<body>
+    <div class="gradient-overlay" id="design">
+        <div class="content">
+            <header class="masthead mb-auto">
+                <div class="inner">
+                    <nav class="nav"> <!-- NavBar -->
+                        <div class="masthead-brand">
+                            <a href="main.html#main"><img src="img/logo.png" alt="Logo da Minly" style="max-width: 100px; max-height: 100px; padding-top: 8px;"></a>
+                        </div>
+                        <a class="nav-link active" href="curso.html#cursos">curso</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">projetos</a>
+                            <div class="dropdown-menu" aria-labelledby="projetosDropdown">
+                                <a class="dropdown-item" href="programacao.html#programacao">Programação</a>
+                                <a class="dropdown-item" href="animacao.html#animacao">Animação</a>
+                                <a class="dropdown-item" href="design.html#design">Design Gráfico</a>
+                                <a class="dropdown-item" href="video.html#video">Vídeo</a>
+                                <a class="dropdown-item" href="som.html#som">Som</a>
+                            </div>
+                        </div>
+                        <a class="nav-link" href="parceiros.html#parceiros">parceiros</a>
+                    </nav>
+                </div>
+            </header>
+            <h2>fotografia</h2>
+            <div class="container">
+                <div class="image-container"onclick="redirectToDynamicPage('Marshmallow', 'Rui Silva', 'img/4.jpg')">
+                    <img src="img/4.jpg" alt="Imagem 4">
+                    <div class="info">
+                        <p id="dynamic-project-1-name">Marshmallow</p>
+                        <p id="dynamic-project-1-author">Rui Silva</p>
+                    </div>
+                </div>
+                <div class="image-container" onclick="redirectToDynamicPage('Caminhos da Imaginação', 'João Santos', 'img/5.jpg')">
+                    <img src="img/5.jpg" alt="Imagem 5">
+                    <div class="info">
+                        <p id="dynamic-project-2-name">Caminhos da Imaginação</p>
+                        <p id="dynamic-project-2-author">João Santos</p>
+                    </div>
+                </div>            
+                <div class="image-container" onclick="redirectToDynamicPage('Reflexos da Natureza', 'Sofia Fernandes', 'img/6.jpg')">
+                    <img src="img/6.jpg" alt="Imagem 6">
+                    <div class="info">
+                        <p id="dynamic-project-3-name">Reflexos da Natureza</p>
+                        <p id="dynamic-project-3-author">Sofia Fernandes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Arquivo JavaScript -->
+</body>
+</html>

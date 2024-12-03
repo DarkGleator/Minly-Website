@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Minly</title>
+    <link rel="stylesheet" href="formulario.css"> <!-- Arquivo CSS -->
+    <script src="formulario.js"></script> <!-- Arquivo JavaScript -->
+</head>
+
+<body>
+    <div class="gradient-overlay">
+        <div class="content">
+            <header class="masthead mb-auto">
+                <div class="inner">
+                    <nav class="nav"> 
+                        <div class="masthead-brand">
+                            <a href="main.html#main"><img src="img/logo.png" alt="Logo da Minly" style="max-width: 100px; max-height: 100px; padding-top: 8px;"></a>
+                        </div>
+                        <a class="nav-link active" href="curso.html#cursos">curso</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">projetos</a>
+                            <div class="dropdown-menu" aria-labelledby="projetosDropdown">
+                                <a class="dropdown-item" href="Design.html#design">Design Gráfico</a>
+                                <a class="dropdown-item" href="programacao.html#programacao">Programação</a>
+                                <a class="dropdown-item" href="animacao.html#animacao">Animação</a>
+                                <a class="dropdown-item" href="fotografia.html#fotografia">Fotografia</a>
+                                <a class="dropdown-item" href="video.html#video">Vídeo</a>
+                                <a class="dropdown-item" href="som.html#som">Som</a>
+                            </div>
+                        </div>
+                        <a class="nav-link" href="parceiros.html#parceiros">parceiros</a>
+                    </nav>
+                </div>
+            </header>
+            <h2>Formulário de Contratação</h2>
+            <form id="formulario">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-container">
+                    <div class="form-group">
+                        <label for="company">Empresa:</label>
+                        <input type="text" id="company" name="company" class="company-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Contacto Telefónico:</label>
+                        <input type="tel" id="phone" name="phone" class="phone-input" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto:</label>
+                    <div class="textarea-container">
+                        <textarea id="subject" name="subject" rows="4" required></textarea>
+                        <div class="button-container">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

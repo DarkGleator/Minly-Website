@@ -1,0 +1,158 @@
+body {
+    background-size: cover; /* Para garantir que a imagem cubra todo o corpo */
+    background-repeat: no-repeat; /* Para evitar a repetição da imagem */
+    font-family: 'Como', sans-serif; /* Definindo a fonte */
+    margin: 0;
+    min-height: 100vh; /* Garante que o corpo tenha pelo menos a altura da janela de visualização */
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px; /* Adiciona um espaço interno ao conteúdo */
+    z-index: 1; /* Coloca o conteúdo à frente do gradiente */
+    position: relative;
+}
+
+/* Estilos para a navbar */
+.nav {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem; /* Definindo o tamanho da fonte da navbar */
+}
+
+.masthead-brand {
+    margin-right: auto; /* Margem à direita automática para empurrar o título para a esquerda */
+}
+
+.nav-link,
+.dropdown-toggle {
+    margin-left: 40px; /* Ajustando margem à esquerda */
+    margin-right: 5px;
+    text-decoration: none;
+    color: black; /* Definindo a cor do texto */
+    font-weight: bold; /* Deixando o texto em negrito */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Ajustando a posição para aparecer abaixo do link "projetos" */
+    left: 0; /* Alinhando com o lado esquerdo do link "projetos" */
+    background-color: #fff; /* Definindo uma cor de fundo */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adicionando uma sombra */
+    z-index: 1; /* Ajustando a ordem de empilhamento */
+    border-radius: 25px; /* Arredondando as bordas do menu dropdown */
+    font-weight: bold; /* Deixando o texto em negrito */
+}
+
+/* Estilizando os itens do menu dropdown */
+.dropdown-item {
+    padding: 12px 16px;
+    color: black; /* Definindo a cor do texto */
+    text-decoration: none; /* Removendo a decoração de texto */
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    border-radius: 25px; /* Arredondando as bordas quando focados */
+}
+
+.dropdown:focus .dropdown-menu {
+    display: block; /* Mostrar o menu dropdown quando o link "projetos" é clicado */
+}
+
+h2 {
+    margin-left: -4px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    transform: scale(3.5); /* Aumenta o tamanho do título para o dobro */
+    transform-origin: left; /* Define a origem da transformação como a esquerda */
+    margin-top: 80px;
+}
+
+
+
+/* Estilo para os rótulos */
+label {
+    font-weight: bold;
+}
+
+/* Estilo para os campos de entrada de texto */
+input[type="email"],
+input[type="text"],
+input[type="tel"] {
+    width: calc(40% - 5px); /* Divide o espaço em dois com uma pequena margem */
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+
+textarea {
+    width: 60%;
+    height: 150px; /* Altura aumentada para a caixa de assunto */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    resize: none; /* Impede que o usuário redimensione */
+    background-color: rgb(241, 241, 241);
+}
+
+/* Estilo para o botão */
+button {
+    padding: 10px 50px;
+    background-color: #a5dfb3;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+
+/* Estilo para o container dos campos de entrada Empresa e Contacto Telefónico */
+.input-container {
+    display: flex;
+}
+
+/* Estilo para os rótulos dos campos */
+.form-group label {
+    display: block; /* Garante que cada rótulo aparece em uma nova linha */
+    margin-top: 30px; /* Adiciona um espaçamento inferior entre o rótulo e o input */
+}
+
+
+input[type="text"],
+input[type="tel"] {
+    min-width: 341px; /* Defina uma largura mínima para os inputs */
+    padding: 10px;
+    margin-right: 40px;
+    background-color: rgb(241, 241, 241);
+}
+
+.textarea-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.textarea-container textarea {
+    width: 60vw;
+}
+
+.button-container {
+    margin-top: 135px;
+    padding-left:35px;
+}
+
+.button-container button {
+    margin-right: 5vw; /* Use uma margem direita em relação à largura da viewport */
+}
+

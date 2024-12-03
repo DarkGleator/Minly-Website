@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Minly - Página Dinâmica</title>
+    <link rel="stylesheet" href="conteudo.css"> <!-- Arquivo CSS -->
+</head>
+<body>
+    <div class="gradient-overlay" id="som">
+        <div class="content">
+            <header class="masthead mb-auto">
+                <div class="inner">
+                    <nav class="nav"> <!-- NavBar -->
+                        <div class="masthead-brand">
+                            <a href="main.html#main"><img src="img/logo.png" alt="Logo da Minly" style="max-width: 100px; max-height: 100px; padding-top: 8px;"></a>
+                        </div>
+                        <a class="nav-link active" href="curso.html#cursos">curso</a>
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">projetos</a>
+                            <div class="dropdown-menu" aria-labelledby="projetosDropdown">
+                                <a class="dropdown-item" href="programacao.html#programacao">Programação</a>
+                                <a class="dropdown-item" href="animacao.html#animacao">Animação</a>
+                                <a class="dropdown-item" href="fotografia.html#fotografia">Fotografia</a>
+                                <a class="dropdown-item" href="video.html#video">Vídeo</a>
+                                <a class="dropdown-item" href="som.html#som">Som</a>
+                            </div>
+                        </div>
+                        <a class="nav-link" href="parceiros.html#parceiros">parceiros</a>
+                    </nav> 
+                </div>
+                <div class="container">
+                    <div class="audio-container">
+                        <audio id="dynamic-audio" controls>
+                            <!-- O src será preenchido dinamicamente através do JavaScript -->
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="text-container">
+                        <h1 id="dynamic-project-info"></h1>
+                        <p id="dynamic-description">
+                        </p>
+                            <!-- A descrição será preenchida dinamicamente através do JavaScript -->
+                        </p>
+                        <p id="dynamic-instagram"></p>
+                        <p id="dynamic-email"></p>
+                        <button class="green-button" onclick="window.location.href='formulario.html#formulario'">Contratar</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <script src="scriptaudio.js"></script> <!-- Arquivo JavaScript -->
+</body>
+</html>
